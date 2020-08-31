@@ -6,4 +6,4 @@ Reference :
 
 https://www.math.nyu.edu/faculty/avellane/AvellanedaLeeStatArb071108.pdf
  
-![Alt text](/relative/PCA QC 500 report .pdf/to/img.jpg?raw=true "Optional Title")
+![Alt text](/relative/PCA QC 500 report .pdf?raw=true "Optional Title")
