@@ -6,3 +6,4 @@ Reference :
 
 https://www.math.nyu.edu/faculty/avellane/AvellanedaLeeStatArb071108.pdf
  
+![Alt text](/relative/path/to/img.jpg?raw=true "Optional Title")
