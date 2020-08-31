@@ -6,4 +6,4 @@ Reference :
 
 https://www.math.nyu.edu/faculty/avellane/AvellanedaLeeStatArb071108.pdf
  
-![Image](Cumulative Performance.jpg)
+![Image](https://github.com/EM51641/PCA-and-pair-trading-strategy-/blob/master/Cumulative%20Performance.jpg)
