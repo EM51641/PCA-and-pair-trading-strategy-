@@ -6,4 +6,4 @@ Reference :
 
 https://www.math.nyu.edu/faculty/avellane/AvellanedaLeeStatArb071108.pdf
  
-![alt text](http://url/to/img.png)
+![Screenshot](Cumulative Performance.jpg)
