@@ -11,7 +11,7 @@ class SMAPairsTrading(QCAlgorithm):
         self.SetStartDate(2000, 1 , 1 )   
         self.SetEndDate(2002, 1 , 1 )
         self.SetCash(100000)
-        self.UniverseSettings.Resolution = Resolution.Daily
+        self.UniverseSettings.Resolution = Resolution.Hour
         self.AddUniverse(self.Universe.Index.QC500)
         self.UniverseSettings.DataNormalizationMode = DataNormalizationMode.Raw
         self.AddAlpha(PairsTradingAlphaModel())
@@ -35,9 +35,16 @@ class PairsTradingAlphaModel(AlphaModel):
 
     def __init__(self):
         self.pair = []
+        self.curr_day = -1
         self.period = timedelta(days=1)
         
     def Update(self, algorithm, data):
+        
+        
+         if self.curr_day == algorithm.Time.day:
+            return []
+            
+        self.curr_day = algorithm.Time.day #One trade per day 
         
         List=[x.Symbol for x in self.pair]
         history = algorithm.History(List, 61 ).close.unstack(level=0)
